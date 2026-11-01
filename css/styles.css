@@ -149,6 +149,7 @@ a { color: inherit; }
   font-size: .62rem; letter-spacing: .16em; text-decoration: none;
 }
 .scroll-cue span { width: 27px; height: 1px; background: var(--gold); }
+
 /* SECCIÓN 05 — CONTENEDORES Y SECCIÓN “SOBRE NOSOTROS” */
 .section-wrap { width: min(1120px, 90%); margin: auto; }
 .about { padding-top: 115px; padding-bottom: 105px; }
@@ -172,6 +173,7 @@ a { color: inherit; }
 .value-item strong, .value-item small { display: block; }
 .value-item strong { font-size: .92rem; }
 .value-item small { margin-top: 3px; color: #87988d; font-size: .76rem; }
+
 /* SECCIÓN 06 — SOLUCIONES SOLARES Y TARJETAS DE PRODUCTOS */
 .solutions { padding-top: 80px; padding-bottom: 115px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 35px; margin-bottom: 42px; }
@@ -182,15 +184,16 @@ a { color: inherit; }
   border-radius: 13px; transition: transform .3s, border-color .3s;
 }
 .card:hover { transform: translateY(-7px); border-color: rgba(183,227,106,.42); }
+
 /* IMÁGENES DE “SOLUCIONES SOLARES”
    Ajusta height para cambiar el alto del espacio de cada imagen.
    object-fit: contain mantiene la imagen completa sin recortarla. */
 .card-image-wrap {
-  height: 210px; position: relative; display: grid; place-items: center; overflow: hidden;
+  height: 155px; position: relative; display: grid; place-items: center; overflow: hidden;
   background: #06140f; border-bottom: 1px solid var(--line);
 }
 .card-image-wrap::after { content: ""; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(4,18,13,.35)); pointer-events: none; }
-.card-image-wrap img { width: 100%; height: 100%; object-fit: contain; padding: 15px; cursor: zoom-in; transition: transform .45s; }
+.card-image-wrap img { width: auto;height: 180px;max-width: 100%; object-fit: contain; padding: 15px; cursor: zoom-in; transition: transform .45s; }
 .card:hover .card-image-wrap img { transform: scale(1.035); }
 .card-index {
   position: absolute; z-index: 2; top: 17px; left: 18px; padding: 6px 10px;
@@ -206,6 +209,7 @@ a { color: inherit; }
 .card-link:hover span { transform: translate(3px, -3px); }
 .solutions-footnote { margin-top: 25px; color: #8fa094; font-size: .83rem; }
 .solutions-footnote span { margin-right: 8px; color: var(--gold); }
+
 /* SECCIÓN 07 — GALERÍA / CARRUSEL DE PROYECTOS */
 .projects { padding: 100px 0 115px; background: #061610; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .slider { position: relative; overflow: hidden; border-radius: 12px; border: 1px solid var(--line); background: #020a07; }
@@ -261,6 +265,7 @@ a { color: inherit; }
 }
 .whatsapp-float span { font-size: 1.9rem; font-weight: 700; }
 .whatsapp-float:hover { transform: translateY(-5px) scale(1.04); background: var(--green-bright); }
+
 /* SECCIÓN 10 — VISOR AMPLIADO DE IMÁGENES (MODAL) */
 .modal {
   display: none; position: fixed; inset: 0; z-index: 2000; padding: 35px;
@@ -271,6 +276,7 @@ a { color: inherit; }
   position: absolute; top: 18px; right: 28px; border: 0; color: white;
   background: transparent; font-size: 2.8rem; cursor: pointer;
 }
+
 /* SECCIÓN 11 — AJUSTES RESPONSIVOS PARA TABLET */
 @media (max-width: 900px) {
   .hero-side { right: 2%; transform: translateY(-50%) scale(.78); opacity: .65; }
@@ -308,7 +314,7 @@ a { color: inherit; }
   .section-heading > p { margin-top: 15px; }
   .cards { grid-template-columns: 1fr; gap: 18px; }
   /* Imágenes de soluciones solares en celular: más compactas */
-  .card-image-wrap { height: 170px; }
+  .card-image-wrap { height: 125px; }
   .card-content { padding: 23px; }
   .card-content p { min-height: auto; }
   .projects { padding: 75px 0 80px; }
