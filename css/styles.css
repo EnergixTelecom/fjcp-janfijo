@@ -74,6 +74,7 @@ a { color: inherit; }
   background: var(--green); border-radius: 7px;
 }
 .navbar-links .nav-contact:hover { background: var(--green-bright); color: var(--bg-deep); }
+
 /* SECCIÓN 04 — PORTADA PRINCIPAL (HERO) */
 .hero {
   min-height: 650px; position: relative; isolation: isolate; overflow: hidden;
@@ -128,12 +129,15 @@ a { color: inherit; }
 .hero-orbit { position: absolute; border: 1px solid rgba(183,227,106,.23); border-radius: 50%; }
 .orbit-one { width: 270px; height: 270px; }
 .orbit-two { width: 355px; height: 355px; border-style: dashed; border-color: rgba(232,189,98,.2); }
+
+/* SOL AMARILLO: solo cambia su color y resplandor */
 .sun-symbol {
   width: 175px; height: 175px; display: grid; place-items: center; border-radius: 50%;
-  color: var(--green); font-size: 7rem; line-height: 1;
-  background: radial-gradient(circle, rgba(183,227,106,.17), rgba(183,227,106,.025) 68%);
-  text-shadow: 0 0 45px rgba(183,227,106,.4);
+  color: #FFD700; font-size: 7rem; line-height: 1;
+  background: radial-gradient(circle, rgba(255,215,0,.17), rgba(255,215,0,.025) 68%);
+  text-shadow: 0 0 45px rgba(255,215,0,.4);
 }
+
 .hero-side-label {
   position: absolute; right: -5px; top: 42px; color: #9aaa9e;
   font-size: .65rem; line-height: 1.5; letter-spacing: .16em; text-align: right;
@@ -149,6 +153,7 @@ a { color: inherit; }
   font-size: .62rem; letter-spacing: .16em; text-decoration: none;
 }
 .scroll-cue span { width: 27px; height: 1px; background: var(--gold); }
+
 
 /* SECCIÓN 05 — CONTENEDORES Y SECCIÓN “SOBRE NOSOTROS” */
 .section-wrap { width: min(1120px, 90%); margin: auto; }
